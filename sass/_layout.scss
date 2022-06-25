@@ -1,0 +1,83 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    box-shadow: $shadow-var;
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.header {
+    height: 7rem;
+    background-color: $main-3;
+}
+
+.content {
+    display: flex;
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+}
+
+.sidebar {
+    background-color: $main-1;
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    flex: 1;
+    background-color: white;
+    @media only screen and (max-width: $bp-large) {
+        
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+    @media only screen and (max-width: $bp-small) {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.discription {
+    font-size: $font-small;
+    padding: 2rem;
+    margin-right: 4rem;
+    box-shadow: $shadow-var-light;
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+    min-width: 60vh;
+    justify-content: space-between;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 1.4rem;
+        margin-right: 3rem;
+        max-width: 80%;
+        padding: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        max-width: 80%;
+    }
+}
+
+.user-rev {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
